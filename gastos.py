@@ -12,6 +12,10 @@ def listar_gastos():
         print(f"- {gasto['descricao']}: R$ {gasto['valor']:.2f}")
 
 
+def total_gastos():
+    return sum(gasto["valor"] for gasto in gastos)
+
+
 def main():
     print(APP_TITLE)
 
@@ -20,6 +24,7 @@ def main():
     cadastrar_gasto("Internet", 99.90)
 
     listar_gastos()
+    print(f"Total gasto: R$ {total_gastos():.2f}")
 
 
 if __name__ == "__main__":
