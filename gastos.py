@@ -1,4 +1,4 @@
-APP_TITLE = "Controle de Gatos"
+APP_TITLE = "Controle de Gastos"
 
 gastos = []
 
